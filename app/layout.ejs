@@ -10,14 +10,56 @@
 </head>
 
 <body>
-  <header class="header">
-    這是 header
+  <header class="header d-f jc-sb ai-c fd-sm-c text-white">
+    <a class="logo" href="/index.html">
+      <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png" alt="">
+    </a>
+    <nav>
+      <ul class="menu d-f fxw-w text-center">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+    </nav>
   </header>
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
+  <footer class="footer text-white">
+    <div class="container">
+      <div class="footer-content d-f jc-sb fxw-w fd-sm-rr mb-16 mb-md-12 ">
+        <ul class="footer-menu d-f ai-c ">
+          <li><a href="/index.html">首頁</a></li>
+          <li><a href="">系列鏡框</a></li>
+          <li><a href="">門市據點</a></li>
+          <li><a href="">部落格</a></li>
+          <li><a href="">常見問題</a></li>
+        </ul>
+        <ul class="footer-icon d-f">
+          <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg" alt=""></a></li>
+          <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg" alt=""></a></li>
+          <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-line.svg" alt=""></a></li>
+        </ul>
+        <ul class="footer-contact py-12 pt-sm-0 pb-sm-12">
+          <li class="d-f ai-c mb-8 mb-md-6">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-phone.svg" alt="">
+            <a href="tel:0800-000-000">0800-000-000</a>
+          </li>
+          <li class="d-f ai-c">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-mail.svg" alt="">
+            <a href="mailto:glasses@business.com">glasses@business.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-declaration d-f jc-sb fd-sm-c">
+        <p class="mb-sm-4">Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="footer-term d-f fd-sm-c">
+          <li class="mr-24 mr-md-12 mb-sm-4"><a href="#">隱私權政策</a></li>
+          <li><a href="#">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>

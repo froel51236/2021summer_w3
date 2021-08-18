@@ -1,0 +1,31 @@
+.fw-900 {
+    font-weight: 900;
+}
+
+.fw-b {
+    font-weight: bold;
+}
+
+.fs-i {
+    font-style: italic;
+}
+
+.h1 {
+    font-size: $h1-font-size;
+    line-height: 96px;
+}
+
+.h2 {
+    font-size: $h2-font-size;
+    line-height: 72px;
+}
+
+.h3 {
+    font-size: $h3-font-size;
+    line-height: 54px;
+}
+
+.h4 {
+    font-size: $h4-font-size;
+    line-height: 36px;
+}

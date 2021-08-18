@@ -1,0 +1,67 @@
+
+.m-0-a {
+    margin: 0 auto;
+}
+
+@each $prop, $abbrev in (padding: p, margin: m) {
+    @for $i from 0 through 90 {
+        .#{$abbrev}t-#{$i},
+        .#{$abbrev}y-#{$i} {
+            #{$prop}-top:  $i * $spacer;
+        }
+        .#{$abbrev}b-#{$i},
+        .#{$abbrev}y-#{$i} {
+            #{$prop}-bottom: $i * $spacer;
+        }
+        .#{$abbrev}l-#{$i},
+        .#{$abbrev}x-#{$i} {
+            #{$prop}-left: $i * $spacer;
+        }
+        .#{$abbrev}r-#{$i},
+        .#{$abbrev}x-#{$i} {
+            #{$prop}-right: $i * $spacer;
+        }
+    }
+        
+    @include pad {
+        @for $i from 0 through 30 {
+            .#{$abbrev}t-md-#{$i},
+            .#{$abbrev}y-md-#{$i} {
+                #{$prop}-top:  $i * $spacer;
+            }
+            .#{$abbrev}b-md-#{$i},
+            .#{$abbrev}y-md-#{$i} {
+                #{$prop}-bottom: $i * $spacer;
+            }
+            .#{$abbrev}l-md-#{$i},
+            .#{$abbrev}x-md-#{$i} {
+                #{$prop}-left: $i * $spacer;
+            }
+            .#{$abbrev}r-md-#{$i},
+            .#{$abbrev}x-md-#{$i} {
+                #{$prop}-right: $i * $spacer;
+            }
+        }
+    }
+    
+    @include mobile {
+        @for $i from 0 through 20 {
+            .#{$abbrev}t-sm-#{$i},
+            .#{$abbrev}y-sm-#{$i} {
+                #{$prop}-top:  $i * $spacer;
+            }
+            .#{$abbrev}b-sm-#{$i},
+            .#{$abbrev}y-sm-#{$i} {
+                #{$prop}-bottom: $i * $spacer;
+            }
+            .#{$abbrev}l-sm-#{$i},
+            .#{$abbrev}x-sm-#{$i} {
+                #{$prop}-left: $i * $spacer;
+            }
+            .#{$abbrev}r-sm-#{$i},
+            .#{$abbrev}x-sm-#{$i} {
+                #{$prop}-right: $i * $spacer;
+            }
+        }
+    }
+}

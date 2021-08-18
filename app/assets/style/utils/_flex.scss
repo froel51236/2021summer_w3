@@ -1,0 +1,51 @@
+.d-f {
+    display: flex;
+}
+
+.fxw-w {
+    flex-wrap: wrap;
+}
+
+.fd-c {
+    flex-direction: column;
+}
+
+.fd-rr {
+    flex-direction: row-reverse;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-fs {
+    justify-content: flex-start;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.ai-fe {
+    align-items: flex-end;
+}
+
+
+@include mobile {
+    .fd-sm-c {
+        flex-direction: column;
+    }
+
+    .fd-sm-rr {
+        flex-direction: row-reverse;
+    }
+    
+}

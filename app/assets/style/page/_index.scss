@@ -1,0 +1,64 @@
+.banner {
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 840px;
+}
+
+.profession {
+    li {
+        width: 23%;
+    }
+    img {
+        margin: 0 auto;
+        padding-bottom: 25px;
+    }
+    h4 {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    p {
+        text-align: left;
+    }
+}
+
+.product {
+    .pic {
+        width: 635px;
+    }
+    .h2 {
+        img {
+            display: inline-block;
+        }
+    }
+}
+
+.design {
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    li {
+        width: 49%;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255,255,255,0.5); 
+        }
+        p {
+            font-size: 72px;
+            line-height: 108px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            transform: translate(-50%, -50%);
+        }        
+
+    }
+}

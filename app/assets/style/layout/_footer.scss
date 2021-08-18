@@ -1,0 +1,96 @@
+.footer {
+    background-color: $primary;
+    padding: 32px 0 40px 0;
+    a {
+        color: inherit;
+        
+        &:hover {
+            background-color: $primary-dark;
+            box-shadow: 3px 3px 2px $primary-light;
+        }
+    }
+}
+
+.footer-content {
+    border-bottom: solid 1px $white;
+}
+
+.footer-menu li:not(:last-child){
+    margin-right: 48px;
+}
+
+.footer-icon{
+    img {
+        width: 48px;
+    }
+    li:not(:last-child){
+        margin-right: 32px;
+    }
+}
+
+.footer-contact {
+    width: 100%;
+    line-height: 54px;
+    font-size: 36px;
+    a {
+        display: inline-block;
+    }
+    img {
+        display: inline-block;
+        width: 36px;
+
+        &:first-child {
+            margin-right: 22px;
+        }
+        &:last-child {
+            margin-right: 20px;
+        }
+    }
+}
+
+@include pad {
+    .footer {
+        padding: 32px 0;
+    }
+    .footer-menu li:not(:last-child){
+        margin-right: 40px;
+    }
+    .footer-icon{
+        img {
+            width: 24px;
+        }
+        li:not(:last-child){
+            margin-right: 24px;
+        }
+    }
+    .footer-contact {
+        font-size: $h5-font-size;
+        line-height: 30px;
+        img {
+            width: 18px;
+            &:first-child {
+                margin-right: 8px;
+            }
+            &:last-child {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+@include mobile {
+    .footer {
+        padding: 24px 0;
+    }
+    .footer-menu{
+        display: none;
+    }
+    .footer-contact {
+        width: 50%;
+        font-size: $h6-font-size;
+    }
+    .footer-declaration {
+        font-size: 14px;
+    }
+}
