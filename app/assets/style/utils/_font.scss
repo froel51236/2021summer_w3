@@ -34,3 +34,21 @@
     font-size: $h5-font-size;
     line-height: 30px;
 }
+
+@include pad {
+    .h1 {
+        font-size: $h1-font-size-md;
+        line-height: 72px;
+    }
+
+    
+    .h2 {
+        font-size: $h2-font-size-md;
+        line-height: 48px;
+    }
+
+    .h3 {
+        font-size: $h3-font-size-md;
+        line-height: 30px;
+    }
+}

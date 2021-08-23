@@ -76,3 +76,22 @@
         }
     }
 }
+
+@include pad {
+    .profession {
+        li {
+            width: 37%;
+        }
+        img {
+            margin: 0 auto;
+            padding-bottom: 25px;
+        }
+        h4 {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        p {
+            text-align: left;
+        }
+    }
+}
