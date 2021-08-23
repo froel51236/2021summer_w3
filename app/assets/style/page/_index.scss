@@ -62,3 +62,17 @@
 
     }
 }
+
+.contact {
+    max-width: 730px;
+    margin: 0 auto;
+    &-text {
+        height: 108px;
+    }
+    &-submit {
+        border: none;
+        &:hover {
+            box-shadow: 3px 3px 2px $shadow;
+        }
+    }
+}

@@ -14,7 +14,7 @@ current: index
 </div>
 
 <!-- profession -->
-<div class="profession text-center bgc-primary pt-30 pb-40">
+<div class="profession text-center bgc-bg-primary pt-30 pb-40">
   <div class="container text-second-color">
     <h2 class="h2 mb-24">用專業的心，做專業的事</h2>
     <ul class="d-f jc-sb">
@@ -135,28 +135,30 @@ current: index
 </div>
 
 <!-- contact us -->
-<div class="bgc-primary">
+<div class="bgc-bg-primary">
   <div class="container pt-30 pb-40">
     <h2 class="h2 text-center mb-20">聯絡我們</h2>
-    <p class="mb-10 h5">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+    <div class="contact">
+      <p class="mb-10 h5">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
       <form>
         <fieldset>
-          <label for="name" class="f_size">姓名</label>
-          <input type="text" id="name" placeholder="陳小明">
-          <label for="tel" class="f_size">連絡電話</label>
-          <input type="tel" id="tel" placeholder="0800-000-123">
-          <label for="mail" class="f_size">電子郵件</label>
-          <input type="email" id="mail" placeholder="example@email.com">
-          <label for="contact-text" class="f_size">意見反應</label>
-          <textarea name="" id="contact-text" placeholder="請輸入您的意見"></textarea>
-          <div class="contact_checkbox mb-5">
+          <label for="name">姓名</label>
+          <input type="text" class="bgc-transparent w-100 px-8 py-7" id="name" placeholder="陳小明">
+          <label for="tel">連絡電話</label>
+          <input type="tel" class="bgc-transparent w-100 px-8 py-7" id="tel" placeholder="0800-000-123">
+          <label for="mail">電子郵件</label>
+          <input type="email" class="bgc-transparent w-100 px-8 py-7" id="mail" placeholder="example@email.com">
+          <label for="contact-text">意見反應</label>
+          <textarea name="" class="bgc-transparent w-100 px-8 py-7 contact-text" id="contact-text" placeholder="請輸入您的意見"></textarea>
+          <div class="mb-20">
             <input type="checkbox" id="contact-check">
-            <label for="contact-check" class="contact_checkbox f_size">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+            <label for="contact-check">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
           </div>
-          <div class="contact_btn_box">
-            <button type="submit" class="contact_btn f_size">確認送出</button>
+          <div class="text-center">
+            <button type="submit" class="py-8 px-72 bgc-primary text-white contact-submit">確認送出</button>
           </div>
         </fieldset>
       </form>
+    </div>
   </div>
 </div>
