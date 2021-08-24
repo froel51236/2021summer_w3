@@ -28,11 +28,11 @@
     }
 }
 
-.product {
+.index-product {
     .pic {
         width: 635px;
     }
-    .p {
+    &-title {
         font-size: $h2-font-size;
         line-height: 72px;
         img {
@@ -101,7 +101,7 @@
         }
     }
 
-    .product {
+    .index-product {
         .pic {
             width: 390px;
         }
@@ -148,7 +148,7 @@
         }
     }
 
-    .product {
+    .index-product {
         .pic {
             width: 345px;
         }
