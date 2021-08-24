@@ -71,4 +71,11 @@
         justify-content: center;
     }
     
+    .fs-sm-0 {
+        flex-shrink: 0;
+    }
+
+    .fs-sm-1 {
+        flex-shrink: 1;
+    }
 }

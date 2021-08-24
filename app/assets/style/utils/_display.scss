@@ -1,0 +1,19 @@
+.d-n {
+    display: none;
+}
+
+.d-b {
+    display: block;
+}
+
+@include pad {
+    .d-md-n {
+        display: none;
+    }
+}
+
+@include mobile {
+    .d-sm-n {
+        display: none;
+    }
+}
