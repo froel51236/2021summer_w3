@@ -5885,13 +5885,13 @@ ol, ul {
 .profession-title {
   text-align: left; }
 
-.product .pic {
+.index-product .pic {
   width: 635px; }
 
-.product .p {
+.index-product .p {
   font-size: 3rem;
   line-height: 72px; }
-  .product .p img {
+  .index-product .p img {
     width: 48px;
     display: inline-block; }
 
