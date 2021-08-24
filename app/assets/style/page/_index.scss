@@ -4,6 +4,11 @@
     background-position: center;
     background-size: cover;
     height: 840px;
+    .container {
+        p {
+            font-size: 16px;
+        }
+    }
 }
 
 .profession {
@@ -12,13 +17,13 @@
     }
     img {
         margin: 0 auto;
-        padding-bottom: 25px;
+        padding-bottom: 16px;
     }
     h4 {
         font-weight: bold;
         margin-bottom: 8px;
     }
-    p {
+    &-title {
         text-align: left;
     }
 }
@@ -27,8 +32,11 @@
     .pic {
         width: 635px;
     }
-    .h2 {
+    .p {
+        font-size: $h2-font-size;
+        line-height: 72px;
         img {
+            width: 48px;
             display: inline-block;
         }
     }
@@ -45,7 +53,7 @@
             content: '';
             position: absolute;
             top: 0;
-            bottom: 0;
+            bottom: 0; 
             left: 0;
             right: 0;
             background-color: rgba(255,255,255,0.5); 
@@ -78,20 +86,90 @@
 }
 
 @include pad {
+    .banner {
+        .container {
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+
     .profession {
         li {
             width: 37%;
         }
-        img {
+    }
+
+    .product {
+        .pic {
+            width: 390px;
+        }
+        &-title {
+            font-size: 28px;
+            img {
+                width: 40px;
+            }
+        }
+    }
+
+    .design {
+        li {
+            width: 48%;
+            p {
+                font-size: 32px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .form {
+        &-label {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}
+
+@include mobile {
+    .banner {
+        height: 394px;
+        .container {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .profession {
+        li {
+            width: 78%;
             margin: 0 auto;
-            padding-bottom: 25px;
         }
-        h4 {
-            font-weight: bold;
-            margin-bottom: 8px;
+    }
+
+    .product {
+        .pic {
+            width: 345px;
         }
-        p {
-            text-align: left;
+        li {
+            position: relative;
+        }
+        &-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            transform: translate(-50%, -50%);
+            img {
+                width: 36px;
+            }
+        }
+    }
+
+    .design {
+        li {
+            width: 100%;
         }
     }
 }

@@ -22,6 +22,10 @@
     justify-content: flex-start;
 }
 
+.jc-fe {
+    justify-content: flex-end;
+}
+
 .jc-sa {
     justify-content: space-around;
 }
@@ -39,6 +43,21 @@
 }
 
 
+@include pad {
+    .fd-md-c {
+        flex-direction: column;
+    }
+
+    .fd-md-r {
+        flex-direction: row;
+    }
+
+    .fd-md-rr {
+        flex-direction: row-reverse;
+    }
+    
+}
+
 @include mobile {
     .fd-sm-c {
         flex-direction: column;
@@ -46,6 +65,10 @@
 
     .fd-sm-rr {
         flex-direction: row-reverse;
+    }
+
+    .jc-sm-c {
+        justify-content: center;
     }
     
 }

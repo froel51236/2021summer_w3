@@ -41,7 +41,6 @@
         line-height: 72px;
     }
 
-    
     .h2 {
         font-size: $h2-font-size-md;
         line-height: 48px;
@@ -49,6 +48,27 @@
 
     .h3 {
         font-size: $h3-font-size-md;
-        line-height: 30px;
+        // line-height: 30px;
+    }
+
+    .h4 {
+        font-size: $h4-font-size-md;
+        line-height: 36px;
+    }
+
+    .h5 {
+        font-size: $h5-font-size-md;
+        line-height: 24px;
+    }
+}
+
+@include mobile {
+    .h1 {
+        font-size: $h1-font-size-sm;
+        line-height: 72px;
+    }
+
+    .h2 {
+        font-size: $h2-font-size-sm;
     }
 }

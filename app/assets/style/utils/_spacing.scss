@@ -24,7 +24,7 @@
     }
         
     @include pad {
-        @for $i from 0 through 30 {
+        @for $i from 0 through 40 {
             .#{$abbrev}t-md-#{$i},
             .#{$abbrev}y-md-#{$i} {
                 #{$prop}-top:  $i * $spacer;
